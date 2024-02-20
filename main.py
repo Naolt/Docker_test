@@ -10,7 +10,7 @@ def fizzbuzz(num):
 	
 
 def main():
-	num = int(input("Enter a number: "))
+	num = int(input("Enter a number: "))	
 	print(fizzbuzz(num))
 
 if __name__ == "__main__":
