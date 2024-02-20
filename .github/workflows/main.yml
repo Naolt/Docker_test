@@ -21,3 +21,16 @@ jobs:
     - name: Run tests
       run: |
         pytest
+  
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Build Docker image
+      run: docker build -t your-image-name:latest .
+
+    - name: Run Docker container
+      run: docker run -d -p 8080:80 your-image-name:latest
+  
+
+  
